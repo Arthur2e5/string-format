@@ -1,8 +1,9 @@
 language: node_js
 node_js:
+  - "node"
   - "0.10"
   - "0.12"
 install:
   - make setup
 script:
-  - make test lint
+  - make -k test lint
